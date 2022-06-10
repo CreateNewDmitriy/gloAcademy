@@ -10,7 +10,7 @@ let servicePrice2 = +prompt('Сколько это будет стоить?');
 let fullPrice = screenPrice + servicePrice1 + servicePrice2;
 let adaptive = confirm('Нужен ли адаптив на сайте?');
 
-let servicePercentPrice = Math.ceil(fullPrice - (fullPrice/100*rollback));
+let servicePercentPrice = Math.ceil(fullPrice - (fullPrice / 100 * rollback));
 console.log(fullPrice);
 
 if (fullPrice >= 30000) {
@@ -23,9 +23,11 @@ if (fullPrice >= 30000) {
     console.log('Что-то пошло не так');
 }
 
+
+
 console.log(typeof title, typeof fullPrice, typeof adaptive);
 console.log(screens.length);
 console.log(`Стоимость верстки экранов ${screenPrice} рублей`);
 console.log(`Стоимость разработки сайта ${fullPrice} рублей`);
 console.log(screens.toLowerCase().split(", "));
-console.log(fullPrice * (rollback/100));
+console.log(fullPrice * (rollback / 100));
